@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="About me page for Photo Ghost">
+    <meta name="description" content="Learn more about Mindi Cherrington, the creator of Photo Ghost">
+    <meta name="viewport" content="Mindi Cherrington">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="photo-ghost.css">
+    <link rel="icon" type="images/x-icon" href="favicon.ico">
+    <title>Photo Ghost: About Me</title>
+</head>
+<body>
+    <!-- start the page head -->
+    <header>
+         <img src="images/ghost-logo.png" alt="logo for site" width="50" height="50">
+        <span>Photo Ghost</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="portfolio.html">My Portfolio</a></li>
+            <li class="active"><a href="scheduling.html">Scheduling</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+
+    <!-- start the main content -->
+    <main>
+        <h1>Schedule an Appointment</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Email*<input type="email" name="email" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        <label>Date*<input type="date" name="date" required></label>
+        <label>Time*<input type="time" name="time" required></label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Session Details</legend>
+            <label><input type="radio" name="method" value="family">Family Photos</label>
+            <label><input type="radio" name="method" value="portrait">Portrait Session</label>
+            <label><input type="radio" name="method" value="event">Event Coverage</label>
+            <label><input type="radio" name="method" value="vacation">Vacations</label>
+            <label><input type="radio" name="method" value="advertising">Advertising</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Photo Type Options</legend>
+            <label><input type="checkbox" name="printed photos" value="chosen">Printed Photos</label>
+            <label><input type="checkbox" name="digital photos" value="chosen">Digital Photos</label>
+            <label><input type="checkbox" name="videos" value="chosen">Videos</label>
+
+            <label>Preferred Photo Shoot Time
+            <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning">Morning (9:00am - 12:00pm)</option>
+                <option value="afternoon">Afternoon (12:00pm - 5:00pm)</option>
+                <option value="evening">Evening (5:00pm - 8:00pm)</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <label>Comments
+            <textarea name="comments"></textarea>
+        </label>
+
+
+        <input type="submit" value="Schedule Appointment">
+        </form>
+    </main>
+
+    <!-- start the page head -->
+    <footer>
+        <p>&copy; 2026 &bull; Mindi Cherrington &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
